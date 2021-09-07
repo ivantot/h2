@@ -1,0 +1,63 @@
+.Book-card {
+  width: 190px;
+  padding: 10px;
+  margin: 15px;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.Book-card:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  cursor: grab;
+}
+
+.Book-publishing-year,
+.Book-author,
+.Book-title {
+  margin: 5px;
+}
+
+.Book-title {
+  font-weight: bolder;
+}
+
+.Book-img {
+  max-width: 70%;
+}
+
+.star:hover {
+  color: crimson;
+  cursor: pointer;
+}
+
+.Book-edit-button {
+  margin-left: 10px;
+}
+
+.Book-edit-button:hover {
+  border: 2px solid crimson;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+@media only screen and (max-width: 800px) {
+  .Book-card {
+    width: 150px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+  }
+
+  .Book-img {
+    max-width: 70%;
+  }
+}
